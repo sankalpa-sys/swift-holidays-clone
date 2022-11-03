@@ -11,7 +11,7 @@ function MainSection() {
   return (
 <>
 <div  className="bg-[url('https://images.pexels.com/photos/1178448/pexels-photo-1178448.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] md:h-[108vh] h-screen bg-no-repeat bg-cover relative z-30">
-      <div className={`absolute w-full left-0 pt-10 top-0 h-screen z-40 ${showPlayer?"bg-black/90":"bg-black/60"} px-5 md:px-0`} >
+      <div className={`absolute w-full left-0 pt-10 top-0 h-screen md:h-[108vh] z-40 ${showPlayer?"bg-black/90":"bg-black/60"} px-5 md:px-0`} >
         <Header showPlayer={showPlayer} />
 
         <section className="flex flex-col items-start justify-end  pr-12  md:w-1/2 w-full h-[60vh]  ml-auto space-y-5">
@@ -32,7 +32,7 @@ function MainSection() {
 
          {showPlayer && (
              <motion.div  initial={{opacity:0, y:100}} animate={{opacity:1, y:0}} transition={{duration:1.5}} className="absolute md:left-56 z-50 md:top-24 top-48 h-[350px] overflow-hidden md:h-[500px] w-[93%] mx-auto  md:w-[1000px]">
-             <ReactPlayer height={'100%'} className="relative" width="100%" controls={true}  url='https://www.youtube.com/watch?v=zcdE9GTQ1C0' />
+             <ReactPlayer height={'100%'} className="relative" width="100%" controls={true}  url='https://www.youtube.com/watch?v=TW9uj83Vq-0' />
              <XMarkIcon onClick={()=>setShowPlayer(false)} className="h-6 w-6 absolute right-1 cursor-pointer text-white z-50 top-1"/>
              </motion.div>
          )}

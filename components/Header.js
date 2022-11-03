@@ -14,7 +14,7 @@ function Header({showPlayer}) {
       />
 
 
-      <div className="md:flex hidden space-x-7 font-[340] text-gray-900 text-[15px]">
+      <div className= "md:flex hidden space-x-7 font-[340] text-gray-900 text-[15px]">
         <p>Home</p>
        <div className="flex items-center space-x-1">
        <p>Company Profile</p>
@@ -30,7 +30,7 @@ function Header({showPlayer}) {
 
 <div className="bg-sky-900 z-10 text-white h-full rounded-r-lg px-5 hidden md:flex flex-col items-center justify-center space-y-1 relative ">
     <h1 className="text-lg font-semibold">Contact Us Now</h1>
-   <p className="text-xs font-light"> +977 9851191095</p>
+   <p className="text-xs font-light"> +977-9851191095</p>
 
 
    <div className="bg-sky-900 z-20 rounded-full p-2 absolute -left-6">
