@@ -6,7 +6,7 @@ import WhyUs from '../components/WhyUs'
 function HomePage() {
   return (
     <main>
-        <MainSection/>
+        <MainSection showForm={true}/>
         <About/>
         <WhyUs/>
     </main>

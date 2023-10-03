@@ -4,28 +4,28 @@ import {ChevronDownIcon, PhoneIcon, Bars3Icon} from "@heroicons/react/24/outline
 
 function Header({showPlayer}) {
   return (
-    <header className={`h-[78px] ${showPlayer?"invisible":"visible"} md:max-w-6xl max-w-screen bg-gray-200 z-50 mx-auto rounded-lg flex items-center justify-between pl-4 shadow-md bg-blend-hue pr-3 md:pr-0`} >
+    <header className={`h-[90px] ${showPlayer?"invisible":"visible"} md:max-w-6xl max-w-screen bg-gray-200 z-50 mx-auto rounded-lg flex items-center justify-between pl-4 shadow-md bg-blend-hue pr-3 md:pr-0`} >
       <Image
         src={"https://swiftholidays.com.np/images/logo.png"}
-        className="object-cover "
-        height={170}
+        className="object-contain py-3 "
+        height={190}
         width={170}
         alt=""
       />
 
 
       <div className= "md:flex hidden space-x-7 font-[340] text-gray-900 text-[15px]">
-        <p>Home</p>
-       <div className="flex items-center space-x-1">
-       <p>Company Profile</p>
+        <p className="cursor-pointer">Home</p>
+       <div className="flex items-center space-x-1 cursor-pointer">
+       <p className="cursor-pointer">Company Profile</p>
        <ChevronDownIcon className="h-4 w-4"/>
        </div>
-        <p>Services</p>
-        <div className="flex items-center space-x-1">
-       <p>Our Bus</p>
+        <p className="cursor-pointer">Services</p>
+        <div className="flex items-center space-x-1 cursor-pointer">
+       <p className="cursor-pointer">Our Bus</p>
        <ChevronDownIcon className="h-4 w-4"/>
        </div>
-        <p>Contact Us</p>
+        <p className="cursor-pointer">Contact Us</p>
       </div>
 
 <div className="bg-sky-900 z-10 text-white h-full rounded-r-lg px-5 hidden md:flex flex-col items-center justify-center space-y-1 relative ">

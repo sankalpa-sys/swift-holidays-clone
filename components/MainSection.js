@@ -5,12 +5,13 @@ import { motion } from "framer-motion"
 import ReactPlayer from "react-player";
 import BookingForm from "./BookingForm";
 
-function MainSection() {
+function MainSection({showForm}) {
+  console.log("showForm", showForm)
     const [showPlayer, setShowPlayer] = useState(false)
 
   return (
 <>
-<div  className="bg-[url('https://images.pexels.com/photos/1178448/pexels-photo-1178448.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] md:h-[108vh] h-screen bg-no-repeat bg-cover relative z-30">
+<div  className="bg-[url('https://images.pexels.com/photos/1178448/pexels-photo-1178448.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] md:h-[108vh] h-screen bg-no-repeat bg-cover relative z-30 bg-fixed bg-center">
       <div className={`absolute w-full left-0 pt-10 top-0 h-screen md:h-[108vh] z-40 ${showPlayer?"bg-black/90":"bg-black/60"} px-5 md:px-0`} >
         <Header showPlayer={showPlayer} />
 
@@ -39,7 +40,7 @@ function MainSection() {
         </section>
       </div>
     </div>
-    <BookingForm/>
+   {showForm && <BookingForm/>}
     </>
   );
 }

@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+  .accordion {
+    /* Your existing CSS styles */
+    /* For example, you may have width, height, background color, etc. */
+    
+    /* Set initial values for animation */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .accordion.active {
+    /* Adjust the max-height value to control the animation height */
+    max-height: 500px; /* You can change this value */
+  }
