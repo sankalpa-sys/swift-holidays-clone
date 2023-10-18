@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import {ChevronDownIcon, PhoneIcon, Bars3Icon} from "@heroicons/react/24/outline";
+import {motion} from 'framer-motion'
 
 function Header({showPlayer}) {
   return (
-    <header className={`h-[90px] ${showPlayer?"invisible":"visible"} md:max-w-6xl max-w-screen bg-gray-200 z-50 mx-auto rounded-lg flex items-center justify-between pl-4 shadow-md bg-blend-hue pr-3 md:pr-0`} >
+    <motion.header initial={{opacity: 0, y: 50}} animate={{opacity:1, y: 0}} transition={{duration: 1}} className={`h-[90px] ${showPlayer?"invisible":"visible"} md:max-w-6xl max-w-screen bg-gray-200 z-50 mx-auto rounded-lg flex items-center justify-between pl-4 shadow-md bg-blend-hue pr-3 md:pr-0`} >
       <Image
         src={"https://swiftholidays.com.np/images/logo.png"}
         className="object-contain py-3 "
@@ -42,7 +43,7 @@ function Header({showPlayer}) {
 
 
 
-    </header>
+    </motion.header>
   );
 }
 

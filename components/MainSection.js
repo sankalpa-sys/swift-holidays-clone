@@ -11,8 +11,8 @@ function MainSection({showForm}) {
 
   return (
 <>
-<div  className="bg-[url('https://images.pexels.com/photos/1178448/pexels-photo-1178448.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] md:h-[108vh] h-screen bg-no-repeat bg-cover relative z-30 bg-fixed bg-center">
-      <div className={`absolute w-full left-0 pt-10 top-0 h-screen md:h-[108vh] z-40 ${showPlayer?"bg-black/90":"bg-black/60"} px-5 md:px-0`} >
+<div  className="bg-[url('https://images.pexels.com/photos/1178448/pexels-photo-1178448.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] md:h-[112vh] h-screen bg-no-repeat bg-cover relative z-30 bg-fixed bg-center">
+      <div className={`absolute w-full left-0 pt-10 top-0 h-full z-40 ${showPlayer?"bg-black/90":"bg-black/60"} px-5 md:px-0`} >
         <Header showPlayer={showPlayer} />
 
         <section className="flex flex-col items-start justify-end  pr-12  md:w-1/2 w-full h-[60vh]  ml-auto space-y-5">

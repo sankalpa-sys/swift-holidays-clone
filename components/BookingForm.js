@@ -52,7 +52,7 @@ function BookingForm() {
     console.log(searchStates)
   return (
     
-    <motion.div initial={{y:100, opacity:0}} animate={{y:0, opacity:1}} transition={{duration:1.5}} className='bg-gray-200 my-10  border  md:max-w-6xl w-[95%] mx-auto absolute md:-bottom-48 md:left-48 left-2 z-50 rounded-lg shadow-xl -bottom-[280px] '>
+    <motion.div initial={{y:100, opacity:0}} viewport={{once:true}} whileInView={{y:0, opacity:1}} transition={{duration:1}} className='bg-gray-200 my-10 border md:max-w-6xl w-[95%] mx-auto absolute md:-bottom-60 md:left-48 left-2 z-50 rounded-lg shadow-xl -bottom-[280px] '>
         <Toaster
   position="top-center"
   reverseOrder={false}
